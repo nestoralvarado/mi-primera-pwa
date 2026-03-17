@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Desarrollo Web en Caracas, Venezuela | T-GRÁFICO - Diseño de Páginas Web</title>
+    <meta name="description" content="T-GRÁFICO - Especialistas en desarrollo web en Caracas, Venezuela y Guayaquil, Ecuador. Sitios web responsivos, optimizados para SEO, con diseño personalizado y rendimiento óptimo.">
+    <meta name="keywords" content="desarrollo web, páginas web, diseño web, sitios web, Caracas, Venezuela, Guayaquil, Ecuador, SEO, responsive">
+    <meta name="author" content="T-GRÁFICO">
+    <meta name="robots" content="index, follow">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#000000">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="canonical" href="https://tgrafico.com/desarrolloweb">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+      .parallax-header {
+        position: relative;
+        height: 100vh;
+        min-height: 800px;
+        overflow: hidden;
+        background: linear-gradient(45deg, #1a1a1a, #2d2d2d);
+      }
+
+      .parallax-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 120%;
+        background-image: url('img/nasa.jpg');
+        background-size: cover;
+        background-position: center;
+        transform: translateZ(0);
+        will-change: transform;
+      }
+
+      .webdev-content {
+        position: relative;
+        z-index: 2;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+      }
+
+      .webdev-circle {
+        position: relative;
+        width: 19rem;
+        height: 19rem;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(0.6rem);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        animation: pulse 2s infinite;
+      }
+
+      .webdev-text {
+        font-family: "Montserrat", sans-serif;
+        font-size: 4.5rem;
+        font-weight: 800;
+        color: #ffffff;
+        text-shadow: 0 0 10px rgba(230, 163, 6, 0.5);
+      }
+
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+          box-shadow: 0 0 0 0 rgba(230, 163, 6, 0.4);
+        }
+        70% {
+          transform: scale(1.05);
+          box-shadow: 0 0 0 20px rgba(230, 163, 6, 0);
+        }
+        100% {
+          transform: scale(1);
+          box-shadow: 0 0 0 0 rgba(230, 163, 6, 0);
+        }
+      }
+
+      .floating-elements {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+      }
+
+      .floating-element {
+        position: absolute;
+        background: rgba(230, 163, 6, 0.1);
+        border-radius: 50%;
+        animation: float 6s infinite;
+      }
+
+      @keyframes float {
+        0%, 100% {
+          transform: translateY(0) rotate(0deg);
+        }
+        50% {
+          transform: translateY(-20px) rotate(180deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!--NavBar-->
+    <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary text-white">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"> <img src="img/isotipo.svg" class="img-fluid" width="45" alt="Nestor"> </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <!--<span class="navbar-toggler-icon"></span>-->
+           <img src="img/barnav.svg" class="img-fluid"  width="60px"  alt="mio">
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="quienesomos.html">Nosotros</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  SERVICIOS
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="disenografico.html">Diseño Gráfico</a></li> 
+                  <li><a class="dropdown-item active" href="desarrolloweb.html">Desarrollo Web</a></li>
+                  <li><a class="dropdown-item" href="designtresd.html">Diseño 3D</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="hosting.html">Hosting</a>
+              </li>
+            </ul>
+            <!-- Right elements -->
+    <div class="d-flex align-items-center">
+        <!-- Icon -->
+        <a class=" me-3 text-reset" href="https://nestoralvarado.github.io/index.html" target="_blank">
+          <i class="fa-brands fa-github-alt"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/nestor-alvarado-a1a0ab27/" target="_blank" class="me-3 text-reset">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://www.youtube.com/channel/UCgmYLjgchMcw6tM7NU7QDNQ?view_as=subscriber" target="_blank"
+          class="me-3 text-reset">
+          <i class="fab fa-youtube"></i>
+        </a>
+      </div>
+      <!-- Right elements -->
+          </div>
+        </div>
+      </nav>
+    <!--Navbar/-->
+
+    <!--Header con Parallax-->
+    <div class="parallax-header">
+      <div class="parallax-bg"></div>
+      <div class="floating-elements">
+        <div class="floating-element" style="width: 100px; height: 100px; top: 20%; left: 10%;"></div>
+        <div class="floating-element" style="width: 150px; height: 150px; top: 60%; left: 80%;"></div>
+        <div class="floating-element" style="width: 80px; height: 80px; top: 40%; left: 50%;"></div>
+      </div>
+      <div class="webdev-content">
+        <div class="webdev-circle">
+          <span class="webdev-text">Web.Dev</span>
+        </div>
+      </div>
+    </div>
+
+    <!--Center desarrollo Web-->
+    <div class="container-fluid judas">
+      <div class="container-fluid blow">
+        <div class="container lover">
+          <p class="freewell">
+            <h1 class="display-1 wn">Diseño sitios web <br>atractivos y funcionales,</h1>
+            <h3 class="display-6" style="font-weight: 600;color: #e6a306; font-family: 'Poppins', sans-serif;">
+              que se adaptan a tus necesidades y reflejan tu marca de manera única.
+            </h3>
+            <br>
+            <h4 class="lead text-white" style="font-size: 1.6em;font-family: 'Poppins', sans-serif;font-weight: 400;">
+              Utilizo tecnologías modernas y mejores prácticas para garantizar un rendimiento óptimo y una experiencia de usuario excepcional. Trabajo en colaboración contigo para entender tus objetivos y requisitos.
+            </h4>
+            <br>
+            <span class="lead" style="font-size: 2rem;font-weight: 600;color: #ffffff; font-family: 'Poppins', sans-serif;">
+              ¡Contáctame hoy mismo para comenzar a construir tu presencia en línea!
+            </span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid nest_web">
+      <pre class="modl">
+      <h2 class="display-2" style="font-weight:600;font-size:4vmin">
+           <span style="color:rgb(117, 103, 103)"> 1</span><span style="color:#cd9618"> {</span>
+            <span style="color:rgb(117, 103, 103)">2</span>      "!diseñoWeb" : {
+            <span style="color:rgb(117, 103, 103)">3</span>         <span style="color:#ffffff"> DesarrolloWeb()</span> {
+            <span style="color:rgb(117, 103, 103)">4</span>              <span style="color:#eea70d"> DiseñoDePaginas.Web</span>();
+            <span style="color:rgb(117, 103, 103)">5</span>       "Desarrollador":web;
+            <span style="color:rgb(117, 103, 103)">6</span>  <span style="color:rgb(238, 117, 101)"> }</span>
+        </h2>
+        </pre>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start footpata">
+      <!-- Section: Social media -->
+      <section class="d-flex justify-content-center justify-content-lg-between p-4">
+        <!-- Left -->
+        <div class="me-5 d-none d-lg-block">
+          <span>Get connected with us on social networks:</span>
+        </div>
+        <!-- Left -->
+
+         <!-- Right -->
+         <div>
+          <a href="https://github.com/nestoralvarado" target="_blank" class="me-4 text-reset">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="mailto:technographicca@gmail.com" class="me-4 text-reset">
+            <i class="fas fa-envelope-open-text"></i>
+          </a>
+          <a href="https://www.instagram.com/technographicca" target="_blank" class="me-4 text-reset">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/nestor-alvarado-a1a0ab27/" target="_blank" class="me-4 text-reset">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://www.youtube.com/channel/UCgmYLjgchMcw6tM7NU7QDNQ?view_as=subscriber" target="_blank"
+            class="me-4 text-reset">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </div>
+        <!-- Right -->
+      </section>
+       <!-- Section: Social media -->
+        <!--consejo-->
+        <!--intro footer-->
+        <div class="container pt-5 pb-5">
+          <div class="jumbotron">
+            <i class="fas fa-palette fa-8x mb-3"></i>
+            <h2 class="display-3" style="font-family:Montserrat;font-weight:700">Diseño Gráfico!</h2>
+            <p class="lead">El diseño gráfico es la base de una buena estrategia global de comunicación e identidad
+              corporativa.</p>
+            <hr class="my-4">
+            <p class="lead upk">Gracias por visitarnos...</p>
+          </div>
+        </div>
+        <!--intro footer end-->
+        <!--consejo end-->
+
+        <!-- Section: Links  -->
+        <section class="">
+          <div class="container-fluid text-center text-md-start mt-5 p-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <!-- Content -->
+                <h6 class="text-uppercase fw-bold mb-4" style="font-family:'Montserrat', sans-serif;font-size:1.6rem">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="66" height="66" fill="currentColor" class="bi bi-circle"
+                    viewBox="-160 0 348 348">
+                    <path
+                      d="M 0,0
+                      C 88.183,0 160.307,72.124 160.307,160.307 160.307,248.49 88.183,320.614 0,320.614 -88.183,320.614 -160.307,248.49 -160.307,160.307 -160.307,72.124 -88.183,0 0,0
+                      
+                      m 0,80.550327
+                      c -45.155351,0 -79.756673,36.095663 -79.756673,79.756673 0,43.66188 34.601322,79.75667 79.756673,79.75667 45.155351,0 79.756673,-36.09479 79.756673,-79.75667
+                    C 79.756673,116.64599 45.155351,80.550327 0,80.550327" />
+                  </svg></i>T-GRÅFICO
+                </h6>
+                <p class="lead">
+                  ESTUDIO CREATIVO: <br>
+                  Desarrollo Web, Diseño Gráfico y 3D
+                </p>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase mb-4">
+                  Productos
+                </h6>
+                <p>
+                  <a href="#!" class="text-reset">Diseño Web</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Diseño Gráfico</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Edición de Videos</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Dominios y Hosting</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase mb-4">
+                  Papelería
+                </h6>
+
+                <p>
+                  <a href="#!" class="text-reset">Tarjetas-Presentación</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Membrete</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Brochure</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Volantes</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4" style="text-align: right">
+                <!-- Links -->
+                <h6 class="text-uppercase mb-4">
+                  Contacto
+                </h6>
+                <p><i class="fas fa-2x fa-home me-3"></i>Avenina Francisco de Miranda, Caracas, Venezuela | Guayaquil, Los Ceibos, Ecuador</p>
+                <p>
+                  <i class="fas fa-2x fa-envelope me-3"></i>
+                  technographicca@gmail.com
+                </p>
+                <p><i class="fas fa-2x fa-phone me-3"></i>...</p>
+                <p><i class="fab fa-3x fa-whatsapp"></i> +593 096 298 8811</p>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+          </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center py-5" style="background-color: rgba(0, 0, 0, 0.05);">
+          © 2026 Copyright:
+          <a class="text-reset fw-bold" href="https://tgrafico.com/" target="_blank">T-GRÁFICO.COM</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <!-- Footer -->
+      <!--footer end-->
+
+    <script src="https://kit.fontawesome.com/1b3801ed41.js" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const parallaxBg = document.querySelector('.parallax-bg');
+        const floatingElements = document.querySelectorAll('.floating-element');
+
+        window.addEventListener('scroll', function() {
+          const scrolled = window.pageYOffset;
+          parallaxBg.style.transform = `translateY(${scrolled * 0.5}px)`;
+
+          floatingElements.forEach((element, index) => {
+            const speed = 0.2 + (index * 0.1);
+            element.style.transform = `translateY(${scrolled * speed}px) rotate(${scrolled * 0.1}deg)`;
+          });
+        });
+
+        // Añadir elementos flotantes dinámicamente
+        const floatingContainer = document.querySelector('.floating-elements');
+        for (let i = 0; i < 5; i++) {
+          const element = document.createElement('div');
+          element.className = 'floating-element';
+          element.style.width = `${Math.random() * 100 + 50}px`;
+          element.style.height = element.style.width;
+          element.style.top = `${Math.random() * 100}%`;
+          element.style.left = `${Math.random() * 100}%`;
+          element.style.animationDelay = `${Math.random() * 2}s`;
+          floatingContainer.appendChild(element);
+        }
+      });
+    </script>
+  </body>
+</html>

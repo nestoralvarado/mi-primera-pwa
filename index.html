@@ -1,0 +1,681 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="T-GRÁFICO - Agencia líder en diseño web y gráfico en Caracas y Guayaquil. Especialistas en desarrollo web, diseño gráfico y modelado 3D. Soluciones creativas para tu negocio.">
+    <meta name="keywords" content="diseño web, desarrollo web, diseño gráfico, diseño 3D, Caracas, Guayaquil, páginas web, branding, identidad corporativa">
+    <meta name="author" content="T-GRÁFICO">
+    <meta name="robots" content="index, follow">
+    <meta name="google-site-verification" content="your-google-site-verification-code">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#000000">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="canonical" href="https://tgrafico.com/">
+    <link rel="stylesheet" href="styles.css?v=1.0.1">
+<script src="scripts.js?v=1.0.1" defer></script>
+
+    <!-- Precargar recursos críticos -->
+    <link rel="preload" href="css/bootstrap.css" as="style">
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <title>T-GRÅFICO | Desarrollo Web & Diseño Gráfico en Caracas y Guayaquil</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+
+    <!-- Hojas de estilo -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <!-- Seguridad -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https:; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:;">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- reCAPTCHA -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    
+    <script>
+  // Esto busca tu archivo CSS y le añade un número único al final
+  const cssFile = 'style.css'; 
+  const link = document.createElement('link');
+  link.rel = 'stylesheet';
+  link.href = cssFile + '?v=' + new Date().getTime();
+  document.head.appendChild(link);
+   </script>
+
+  </head>
+  <body>
+    <!--NavBar-->
+    <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary text-white">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"> <img src="img/isotipo.svg" class="img-fluid" width="45" alt="Logo de T-GRÁFICO"> </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+           <!--<span class="navbar-toggler-icon"></span>-->
+           <img src="img/barnav.svg" class="img-fluid"  width="60px"  alt="mio">
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="quienesomos.html">Nosotros</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  SERVICIOS
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="disenografico.html">Diseño Gráfico</a></li>
+                  <li><a class="dropdown-item" href="desarrolloweb.html">Desarrollo Web</a></li>
+                  <li><a class="dropdown-item" href="designtresd.html">Diseño 3D</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="hosting.html">Hosting</a>
+              </li>
+            </ul>
+            <!-- Right elements -->
+    <div class="d-flex align-items-center">
+        <!-- Icon -->
+        <a class=" me-3 text-reset" href="https://github.com/nestoralvarado" target="_blank">
+          <i class="fa-brands fa-github-alt"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/nestor-alvarado-a1a0ab27/" target="_blank" class="me-3 text-reset">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://www.youtube.com/channel/UCgmYLjgchMcw6tM7NU7QDNQ?view_as=subscriber" target="_blank"
+          class="me-3 text-reset">
+          <i class="fab fa-youtube"></i>
+        </a>
+      </div>
+      <!-- Right elements -->
+          </div>
+        </div>
+      </nav>
+    <!--Navbar/-->
+    <!--Header Video Background-->
+    <video class="nest" autoplay muted loop poster="img/cintesis.svg">
+      <source src="video/webhead2.mp4" type="video/mp4">
+      Tu navegador no soporta el formato de video.
+    </video>
+    <!--Header-->
+    <div class="container-fluid parallax-header">
+      <div class="overlay-dark position-absolute top-0 start-0 w-100 h-100 bg-black opacity-75"></div>
+      <div class="container tghead" style="position: relative; z-index: 10;">
+        <div class="col-md-10 col-xl-7 position-relative mx-auto mt-5 mt-xl-0">
+        <div class="text text-center">
+          <img src="img/isotipotgnodos.svg" class="img-fluid" width="80%"  alt="Logo de T-GRÁFICO">
+            <div class="masc">
+              <h1 class="display-1" style="font-weight: 900">T-GRÅFICO</h1>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="scroll-down">
+        <a href="#servicios" class="mouse-wrapper">
+          <span class="mouse">
+            <span class="wheel"></span>
+          </span>
+        </a>
+      </div>
+    </div>
+    <!--Header/-->
+
+    <!-- Sección Servicios -->
+    <section id="servicios" class="services-section extermination">
+      <div class="container-fluid dismemberment">
+        <div class="text-center mb-5">
+          <svg viewBox="0 0 1000 220" width="100%" height="auto" xmlns="http://www.w3.org/2000/svg" style="max-width:100%;">
+            <text class="stroke-anim" y="90" stroke="rgba(255, 255, 255, 0.321)" stroke-width="0.6" fill="none"
+                  font-family="Climate Crisis, Montserrat, Arial, sans-serif" font-size="110">
+              <tspan x="0" text-anchor="start">Nuestros</tspan>
+              <tspan x="1000" dy="90" text-anchor="end">Servicios</tspan>
+            </text>
+          </svg>
+          <p class="display-6" style="color: rgb(147, 147, 147);"> Estudio digital que construye sitios web que impactan y marcas que perduran. <br>  Calidad premium desde Caracas y Guayaquil.</p>
+        </div>
+<div class="container">
+        <div class="row g-4">
+          <!-- Diseño Web -->
+          <div class="col-md-6 col-lg-4">
+            <div class="service-card h-100">
+              <div class="icon-wrapper">
+                <i class="fas fa-laptop-code"></i>
+              </div>
+              <h3>Diseño Web</h3>
+              <p>Sitios web responsivos y optimizados para SEO que convierten visitantes en clientes.</p>
+              <ul class="feature-list">
+                <li><i class="fas fa-check"></i> Diseño Responsivo</li>
+                <li><i class="fas fa-check"></i> Optimización SEO</li>
+                <li><i class="fas fa-check"></i> Integración CMS</li>
+              </ul>
+
+            </div>
+          </div>
+
+          <!-- Diseño Gráfico -->
+          <div class="col-md-6 col-lg-4">
+            <div class="service-card h-100">
+              <div class="icon-wrapper">
+                <i class="fas fa-palette"></i>
+              </div>
+              <h3>Diseño Gráfico</h3>
+              <p>Creación de identidad visual y materiales gráficos que destacan tu marca.</p>
+              <ul class="feature-list">
+                <li><i class="fas fa-check"></i> Branding</li>
+                <li><i class="fas fa-check"></i> Material Publicitario</li>
+                <li><i class="fas fa-check"></i> Redes Sociales</li>
+              </ul>
+
+            </div>
+          </div>
+
+          <!-- Diseño 3D -->
+          <div class="col-md-6 col-lg-4">
+            <div class="service-card h-100">
+              <div class="icon-wrapper">
+                <i class="fas fa-cube"></i>
+              </div>
+              <h3>Diseño 3D</h3>
+              <p>Modelado y visualización 3D para llevar tus ideas a una nueva dimensión.</p>
+              <ul class="feature-list">
+                <li><i class="fas fa-check"></i> Modelado 3D</li>
+                <li><i class="fas fa-check"></i> Animación</li>
+                <li><i class="fas fa-check"></i> Renderizado</li>
+              </ul>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Sección Servicios /-->
+
+        <!-- Hero Section -->
+        <section class="hero-section">
+          <div class="container d-flex align-items-center">
+            <div class="row align-items-center">
+              <div class="col-lg-6">
+                <h2 class="display-3 fw-bold mb-4 animate__animated animate__fadeInUp">
+                  Transformamos Ideas en Experiencias Digitales
+                </h2>
+                <p class="lead mb-4 animate__animated animate__fadeInUp animate__delay-1s">
+                  Desarrollo web profesional, diseño gráfico creativo y modelado 3D innovador para hacer crecer tu negocio.
+                </p>
+
+              </div>
+              <div class="col-lg-6 d-none d-lg-block">
+                <img src="img/logoTGmac.svg" alt="Diseño y Desarrollo Web" class="img-fluid animate__animated animate__fadeInRight">
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Hero Section -->
+
+         <!--proyectos-->
+         <section class="proyectos caplum text-white">
+          <div class="container">
+            <h2 class="display-4 fw-bold mb-4 d-flex justify-content-center">Proyectos</h2>
+            <div class="row">
+              <div class="col-md-6 col-lg-4">
+                <a href="https://tgrafico.com/circulos" target="_blank">
+                  <div class="card1">
+                    <img src="img/puntouno.svg" class="card-img-top" alt="Proyecto 1">
+                    <div class="overlay-text">Ver proyecto Mega</div>
+                  </div>
+                </a>
+                <h3 class=" text-center">
+                  <a>Mega</a>
+                </h3>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <a href="https://tgrafico.com/cafe" target="_blank">
+                <div class="card2">
+                  <img src="img/puntotres.svg" class="card-img-top" alt="Proyecto 1">
+                  <div class="overlay-text">Ver proyecto Fx</div>
+                </div>
+                <h3 class=" text-center">
+                  <a>Fx</a>
+                </h3>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <a href="https://tgrafico.com/franelas" target="_blank">
+                <div class="card3">
+                  <img src="img/puntodos.svg" class="card-img-top" alt="Proyecto 1">
+                  <div class="overlay-text">Ver proyecto Franela</div>
+                </div>
+                <h3 class=" text-center">
+                  <a>Franela</a>
+                </h3>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--proyectos/-->
+
+<!--Header 3D-->
+<div class="container-fluid blacksabbath">
+<h3 class="display-3 text-center text-white" style="font-weight: 900;">Diseño 3D con CSS</h3>
+<div class="container-fluid super">
+  <main>
+    <article id="fondoescritorio">
+        <header id="linda">
+            <h2 id="bellaprincesa" data-title="Web.Dev">Web.Dev</h2>
+        </header>
+        <p id="nestr">Nestor Alvarado</p>
+        <p id="eleazz">Graphic Designer</p>
+        <p id="jefa">Desarrollo <strong>Web</strong></p>
+        <p id="mamol"><span data-title="Pub.">Pub.</span> <span data-title="Gráficos">Gráficos</span></p>
+        <img id="PHD" src="img/pajarracosdialogo.svg" class="img-fluid" alt="culu">
+    </article>
+</main>
+</div>
+</div>
+<!--Header 3D/-->
+
+<!-- Philosophy Section -->
+<section class="py-6 bg-black text-white border-top border-bottom border-secondary border-opacity-25" style="padding-bottom: 6%;">
+  <div class="container py-5">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10 text-center" data-aos="fade-up">
+        <h2 class="display-4 fw-bold mb-4" style="font-family: Montserrat,sans-serif;">No creamos páginas comunes. <br>Diseñamos experiencias.</h2>
+        <p class="fs-4 text-white-50 lh-lg font-monospace">
+          En <span style="font-family: Montserrat, sans-serif;font-weight: 900;color: rgb(255, 255, 255);">T-GRÅFICO</span> nos obsesionamos con el detalle. Cada píxel, cada animación y cada línea de código están pensados para comunicar la identidad de tu marca con una precisión técnica absoluta.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Philosophy Section /-->
+
+       <!--prueba-->
+       <section class="overflow-hidden papu pt-2 pt-sm-3 pt-md-4 pt-lg-3 pb-1 pb-sm-3 pb-md-4 pb-lg-5">
+        <div class="container position-relative py-5 my-lg-3 my-xl-4 my-xxl-5">
+          <div class="position-absolute aos-init aos-animate" style="margin-left: -12.7%;" data-aos="zoom-in" data-aos-duration="500" data-aos-offset="300" data-disable-parallax-down="lg">
+            <svg class="text-warning d-none d-lg-block" width="744" height="744" viewBox="0 0 744 744" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="372" cy="372" r="372"></circle>
+            </svg>
+          </div>
+          <div class="d-none d-xxl-block" style="height: 190px;"></div>
+          <div class="d-none d-lg-block d-xxl-none" style="height: 150px;"></div>
+          <div class="row justify-content-center justify-content-lg-start position-relative z-2">
+            <div class="col-sm-10 col-md-8 col-lg-5 col-xl-4 text-center text-lg-start aos-init aos-animate" data-aos="fade-up" data-aos-duration="850" data-aos-offset="120" data-disable-parallax-down="lg">
+              <div class="d-none d-lg-block" data-bs-theme="light" style="font-family: 'Montserrat';color: #342c24">
+                <h2 class="display-5 mb-4" style="font-weight: 800;">Let the Fellas handle it.</h2>
+                <p class="fs-lg text-white pb-3 pb-sm-4 mb-lg-0" data-bs-theme="light" style="font-weight: 600">Diseño Gráfico & Desarrollo Web. <br> Caracas, Venezuela | Guayaquil, Ecuador</p>
+              </div>
+            </div>
+          </div>
+          <div class="d-none d-xl-block" style="margin-top: -240px;"></div>
+          <div class="d-none d-lg-block d-xl-none" style="margin-top: -160px;"></div>
+          <div class="d-flex position-relative z-2 mb-3">
+            <div class="flex-xxl-shrink-0 position-relative z-2 aos-init" style="max-width: 540px; margin-top: 26%; margin-right: -9.6%;" data-aos="fade-up" data-aos-duration="500" data-aos-delay="400" data-disable-parallax-down="lg">
+              <img class="rounded-3 mt-n5 mt-lg-0 d-block d-dark-mode-none" src="img/intro/pages/01-light.jpg" alt="Página de ejemplo 1" style="box-shadow: 1.875rem .625rem 5rem rgba(59, 59, 60, 0.62);"><img class="border rounded-3 mt-n5 mt-lg-0 d-none d-dark-mode-block" src="img/intro/pages/01-light.jpg" alt="Page" style="box-shadow: 1.875rem .625rem 5rem rgba(0,0,0, .2);">
+            </div>
+            <div class="flex-xxl-shrink-0 position-relative z-1 aos-init aos-animate" style="max-width: 481px; margin-top: 17.6%; margin-right: -8.5%;" data-aos="fade-up" data-aos-duration="500" data-aos-delay="200" data-disable-parallax-down="lg">
+              <img class="rounded-3 mt-n5 mt-lg-0 d-block d-dark-mode-none" src="img/intro/pages/02-light.jpg" alt="Página de ejemplo 2" style="box-shadow: 1.875rem .625rem 5rem rgba(65,81,98, .68);"><img class="border rounded-3 mt-n5 mt-lg-0 d-none d-dark-mode-block" src="img/intro/pages/02-light.jpg" alt="Page" style="box-shadow: 1.875rem .625rem 5rem rgba(0,0,0, .2);">
+            </div>
+            <div class="flex-xxl-shrink-0 aos-init aos-animate" style="max-width: 510px;" data-aos="fade-up" data-aos-duration="500" data-aos-offset="250" data-disable-parallax-down="lg">
+              <img class="rounded-3 d-block d-dark-mode-none" src="img/intro/pages/03-light.jpg" alt="Página de ejemplo 3" style="box-shadow: 1.875rem .625rem 5rem rgba(61, 62, 63, 0.4);"><img class="border rounded-3 d-none d-dark-mode-block" src="img/intro/pages/03-dark.jpg" alt="Page" style="box-shadow: 1.875rem .625rem 5rem rgba(0,0,0, .2);">
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--prueba -->
+      <div class="container-fluid bg-black">
+        <h3 class="display-6 text-white text-center pt-5" style="font-family:'Montserrat',sans-serif;font-weight:700;">Motion Graphics: Json, SVG, ASCII</h3>
+        <div class="container-fluid">
+        <!--  <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+<dotlottie-player src="https://lottie.host/ec398a54-8a03-46cd-b47f-444d75b2aca9/T3yUfhhpBZ.lottie" background="transparent" speed="1" style="width: 100%; height: 100%" loop autoplay></dotlottie-player>-->
+<img src="img/bouncetg.svg" alt="isotipo" class="img-fluid" width="100%">
+        </div>
+      </div>
+
+    <div class="container-fluid bg-black" style="padding: 0px;">
+      <h3 class="display-5 text-white text-center" style="font-family: 'Montserrat', sans-serif; font-weight: 700;">Codigo ASCII</h3>
+  <video width="100%" height="auto" autoplay muted loop controls poster="img/yoglitch.svg" style="object-fit: cover;">
+  <source src="video/asciicodigo.mp4" type="video/mp4">
+  Tu navegador no soporta el formato de video.
+</video>
+    </div>
+    <!--Contenido Principal/-->
+
+<!--mapaCaracas-->
+<div class="container-fluid mapaoscuro bg-white" style="padding: 0px;">
+  <iframe width="100%" height="1000" src="https://maps.google.com/maps?width=&amp;height=1000&amp;hl=en&amp;q=chacao%20caracas%20venezuela+(T-GRAFICO)&amp;ie=UTF8&amp;t=&amp;z=15&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" loading="lazy">
+  </iframe>
+</div>
+<!--mapaCaracas-->
+   <!-- Footer -->
+   <footer class="text-center text-lg-start footpata">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block">
+        <span>Get connected with us on social networks:</span>
+      </div>
+      <!-- Left -->
+
+       <!-- Right -->
+       <div>
+        <a href="https://github.com/nestoralvarado" target="_blank" class="me-4 text-reset">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="mailto:technographicca@gmail.com" class="me-4 text-reset">
+          <i class="fas fa-envelope-open-text"></i>
+        </a>
+        <a href="https://www.instagram.com/technographicca" target="_blank" class="me-4 text-reset">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/nestor-alvarado-a1a0ab27/" target="_blank" class="me-4 text-reset">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://www.youtube.com/channel/UCgmYLjgchMcw6tM7NU7QDNQ?view_as=subscriber" target="_blank"
+          class="me-4 text-reset">
+          <i class="fab fa-youtube"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+     <!-- Section: Social media -->
+      <!--consejo-->
+      <!--intro footer-->
+      <div class="container pt-5 pb-5">
+        <div class="jumbotron">
+          <i class="fas fa-palette fa-8x mb-3"></i>
+          <h2 class="display-3" style="font-family:Montserrat;font-weight:700">Diseño Gráfico!</h2>
+          <p class="lead">El diseño gráfico es la base de una buena estrategia global de comunicación e identidad
+            corporativa.</p>
+          <hr class="my-4">
+          <p class="lead upk">Gracias por visitarnos...</p>
+        </div>
+      </div>
+      <!--intro footer end-->
+      <!--consejo end-->
+
+      <!-- Section: Links  -->
+      <section class="">
+        <div class="container-fluid text-center text-md-start mt-5 p-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold mb-4" style="font-family:'Montserrat', sans-serif;font-size:1.6rem">
+                <svg xmlns="http://www.w3.org/2000/svg" width="66" height="66" fill="currentColor" class="bi bi-circle"
+                  viewBox="-160 0 348 348">
+                  <path
+                    d="M 0,0
+                    C 88.183,0 160.307,72.124 160.307,160.307 160.307,248.49 88.183,320.614 0,320.614 -88.183,320.614 -160.307,248.49 -160.307,160.307 -160.307,72.124 -88.183,0 0,0
+
+                    m 0,80.550327
+                    c -45.155351,0 -79.756673,36.095663 -79.756673,79.756673 0,43.66188 34.601322,79.75667 79.756673,79.75667 45.155351,0 79.756673,-36.09479 79.756673,-79.75667
+                    C 79.756673,116.64599 45.155351,80.550327 0,80.550327" />
+                </svg></i>T-GRÅFICO
+              </h6>
+              <p class="lead">
+                ESTUDIO CREATIVO: <br>
+                Desarrollo Web, Diseño Gráfico y 3D
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase mb-4">
+                Productos
+              </h6>
+              <p>
+                <a href="#!" class="text-reset">Diseño Web</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Diseño Gráfico</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Edición de Videos</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Dominios y Hosting</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase mb-4">
+                Papelería
+              </h6>
+
+              <p>
+                <a href="#!" class="text-reset">Tarjetas-Presentación</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Membrete</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Brochure</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Volantes</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4" style="text-align: right">
+              <!-- Links -->
+              <h6 class="text-uppercase mb-4">
+                Contacto
+              </h6>
+              <p><i class="fas fa-2x fa-home me-3"></i>Avenina Francisco de Miranda, Caracas, Venezuela | Guayaquil, Los Ceibos, Ecuador</p>
+              <p>
+                <i class="fas fa-2x fa-envelope me-3"></i>
+                technographicca@gmail.com
+              </p>
+              <p><i class="fas fa-2x fa-phone me-3"></i>...</p>
+              <p><i class="fab fa-3x fa-whatsapp"></i> +593 096 298 8811</p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
+
+      <!-- Copyright -->
+      <div class="text-center py-5" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2026 Copyright:
+        <a class="text-reset fw-bold" href="https://tgrafico.com/" target="_blank">T-GRÅFICO.COM</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+    <!--footer end-->
+
+    <script src="https://kit.fontawesome.com/1b3801ed41.js" crossorigin="anonymous"></script>
+
+
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="contact-section exter py-5" style="background-color: rgb(44, 35, 3);">
+      <div class="container">
+        <div class="row d-flex align-items-center">
+          <div class="col-lg-6">
+            <h2 class="display-4 fw-bold">Contáctanos</h2>
+            <p class="lead mb-4">Estamos aquí para ayudarte con tu próximo proyecto</p>
+
+            <div class="contact-info">
+              <div class="d-flex mb-3">
+                <i class="fas fa-map-marker-alt fa-2x me-3"></i>
+                <div>
+                  <h5>Ubicación</h5>
+                  <p>Caracas, Venezuela / Guayaquil, Ecuador</p>
+                </div>
+              </div>
+
+              <div class="d-flex mb-3">
+                <i class="fas fa-envelope fa-2x me-3"></i>
+                <div>
+                  <h5>Email</h5>
+                  <p>technographicca@gmail.com</p>
+                </div>
+              </div>
+
+              <div class="d-flex">
+                <i class="fas fa-phone fa-2x me-3"></i>
+                <div>
+                  <h5>Teléfono</h5>
+                  <p>+593 96 298 8811</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <form id="contactForm" class="contact-form" action="send_email.php" method="POST">
+              <div class="mb-3">
+                <label for="name" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="name" name="name" pattern="[A-Za-zÀ-ÿ\s]{3,50}" required>
+                <div class="invalid-feedback">
+                  Por favor ingrese un nombre válido (mínimo 3 caracteres)
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                <div class="invalid-feedback">
+                  Por favor ingrese un email válido
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label for="subject" class="form-label">Asunto</label>
+                <input type="text" class="form-control" id="subject" name="subject" minlength="3" maxlength="50" required>
+                <div class="invalid-feedback">
+                  Por favor ingrese un asunto
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label for="message" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="message" name="message" rows="5" minlength="10" maxlength="500" required></textarea>
+                <div class="invalid-feedback">
+                  Por favor ingrese un mensaje (mínimo 10 caracteres)
+                </div>
+              </div>
+
+              <!-- Honeypot para spam -->
+              <div class="d-none">
+                <input type="text" name="honeypot">
+              </div>
+
+              <!-- reCAPTCHA -->
+
+             <!-- <div class="g-recaptcha mb-3" data-sitekey="TU_CLAVE_PUBLICA_RECAPTCHA"></div> -->
+
+              <button type="submit" class="btn btn-primary btn-lg" id="submitBtn" style="background-color: rgb(43, 33, 3); color: white;border-radius: 2rem; font-weight: 600; font-family: Poppins, sans-serif;border: none;">
+                <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
+                Enviar Mensaje
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+     <!-- end -->
+     <div class="text-center py-5" style="background-color: rgb(44, 35, 3);color: rgb(255, 255, 255);font-size: 2rem;">
+      <i class="fa-solid fa-6x fa-circle-dot"></i>
+      <h2 class="display-3 pt-4" style="font-family:Montserrat;font-weight:900">T-GRÅFICO</h2>
+    </div>
+
+ <script>
+   document.addEventListener('DOMContentLoaded', function() {
+     const parallaxHeader = document.querySelector('.parallax-header');
+     if (!parallaxHeader) return;
+
+     function handleParallax() {
+         const scrolled = window.pageYOffset;
+         const val = scrolled * 0.4;
+         parallaxHeader.style.backgroundPositionY = `calc(50% + ${val}px)`;
+     }
+
+     window.addEventListener('scroll', handleParallax);
+     handleParallax(); // Inicializar posición
+ });
+ </script>
+
+    <!-- end -->
+
+    <!-- Botones flotantes -->
+    <div class="floating-buttons">
+      <!-- Chat Widget -->
+      <div class="chat-widget" id="chatWidget">
+        <button class="chat-toggle" onclick="toggleChat()">
+          <i class="fas fa-comments"></i>
+          <span class="notification-badge">10</span>
+        </button>
+
+        <div class="chat-container" id="chatContainer">
+          <div class="chat-header">
+            <div class="chat-header-content">
+              <div class="chat-avatar">
+                <img src="img/isotipo.svg" alt="T-GRÁFICO Support">
+              </div>
+              <div class="chat-info">
+                <h5 style="font-family: 'Montserrat', sans-serif;font-weight: 700;">Chat T-GRÅFICO</h5>
+                <span class="status-indicator">En línea</span>
+              </div>
+            </div>
+            <button onclick="toggleChat()" class="close-chat">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+
+          <div class="chat-messages" id="chatMessages">
+            <div class="message received">
+              <div class="message-content">
+                ¡Hola! 👋 ¿En qué podemos ayudarte hoy?
+              </div>
+            <!--  <div class="message-time">Ahora</div>-->
+            </div>
+          </div>
+
+          <div class="chat-input">
+            <input type="text" placeholder="Escribe un mensaje..." id="chatInput" onkeypress="handleKeyPress(event)">
+            <button onclick="sendMessage()">
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+    <!-- Botón Volver Arriba -->
+    <button id="backToTop" class="back-to-top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
